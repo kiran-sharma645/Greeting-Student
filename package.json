@@ -1,9 +1,12 @@
 {
+  "homepage": "https://kiran-sharma645.github.io/Greeting-Student.git",
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "test": "jest",
     "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
@@ -43,6 +46,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.5.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.5.0",
     "jest": "^26.4.2",
     "react-test-renderer": "^16.13.1",
